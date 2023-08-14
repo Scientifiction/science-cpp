@@ -1,46 +1,44 @@
 #include "lib.hpp"
-class Mathm{
-    Lib lib;
-    public:
-        std::vector<int> factor(int num){
-            return lib.factor(num);
-        }
-        int A(int m,int n){
-            return lib.A(m,n);
-        }
-        int C(int m,int n){
-            return lib.C(m,n);
-        }
-        int gcd(int a,int b){
-            return lib,gcd(a,b);
-        }
-        int lcm(int a,int b){
-            return lib.lcm(a,b);
-        }
-        std::vector<int> range(int end){
-            return lib.range(end);
-        }
-        std::vector<int> range(int a,int end){
-            return lib.range(a,end);
-        }
-        std::vector<int> range(int a,int end,int walk){
-            return lib.range(a,end,walk);
-        }
-        double round(double n,int x=0){
-            return lib.round(n,x);
-        }
-        double log(double a,double N){
-            return lib.log(a,N);
-        }
-        double log(double N){
-            return lib.log(N);
-        }
-        double pow(double a,double b){
-            return lib.pow(a,b);
-        }
-        double root(double a,double b){
-            return lib.root(a,b);
-        }
+namespace Mathm{
+    std::vector<int> factor(int num){
+        return Lib::factor(num);
+    }
+    int A(int m,int n){
+        return Lib::A(m,n);
+    }
+    int C(int m,int n){
+        return Lib::C(m,n);
+    }
+    int gcd(int a,int b){
+        return Lib::gcd(a,b);
+    }
+    int lcm(int a,int b){
+        return Lib::lcm(a,b);
+    }
+    std::vector<int> range(int end){
+        return Lib::range(end);
+    }
+    std::vector<int> range(int a,int end){
+        return Lib::range(a,end);
+    }
+    std::vector<int> range(int a,int end,int walk){
+        return Lib::range(a,end,walk);
+    }
+    double round(double n,int x=0){
+        return Lib::round(n,x);
+    }
+    double log(double a,double N){
+        return Lib::log(a,N);
+    }
+    double log(double N){
+        return Lib::log(N);
+    }
+    double pow(double a,double b){
+        return Lib::pow(a,b);
+    }
+    double root(double a,double b){
+        return Lib::root(a,b);
+    }
 };
 
 //Test
@@ -48,10 +46,9 @@ template <class S>
 void printv(std::vector<S> v);
 #include <iostream>
 int main(){
-    Mathm M;
-    printv(M.factor(30));
-    printv(M.range(3,7,2));
-    std::cout<<M.round(4.2561,2);
+    printv(Mathm::factor(30));
+    printv(Mathm::range(3,7,2));
+    std::cout<<Mathm::round(4.2561,2);
     return 0;
 }
 

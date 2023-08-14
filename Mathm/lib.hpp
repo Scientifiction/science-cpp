@@ -1,21 +1,20 @@
 #include <vector>
 #include <cmath>
-class Lib{
-    public:
-        std::vector<int> factor(int num);
-        int A(int m,int n);
-        int C(int m,int n);
-        int gcd(int a,int b);
-        int lcm(int a,int b);
-        std::vector<int> range(int end);
-        std::vector<int> range(int a,int end);
-        std::vector<int> range(int a,int end,int walk);
-        //std::vector<int> findprimes(int n);
-        double round(double n,int x=0);
-        double log(double a,double N);
-        double log(double N);
-        double pow(double a,double b);
-        double root(double a,double b);
+namespace Lib{
+    std::vector<int> factor(int num);
+    int A(int m,int n);
+    int C(int m,int n);
+    int gcd(int a,int b);
+    int lcm(int a,int b);
+    std::vector<int> range(int end);
+    std::vector<int> range(int a,int end);
+    std::vector<int> range(int a,int end,int walk);
+    //std::vector<int> findprimes(int n);
+    double round(double n,int x=0);
+    double log(double a,double N);
+    double log(double N);
+    double pow(double a,double b);
+    double root(double a,double b);
 };
 
 std::vector<int> Lib::factor(int num){
