@@ -109,7 +109,7 @@ int main(){
     return 0;
 }
 
-template <class S>
+template <typename S>
 void printv(std::vector<S> v){
     printf("Printv: [ ");
     for (S x : v) std::cout<<x<<' ';
